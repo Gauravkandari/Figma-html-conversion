@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(147deg, #C8CCCF 0%, #97A3A3 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box {
+    flex: 1 0 auto;
+    max-width: 65%;
+    flex-basis: 65%;
+}
+
+.content h1 {
+    font-size: 80px;
+    color: #363830;
+}
+
+.content p {
+    font-size: 24px;
+    color: #363830;
+    margin: 5px 0 12px;
+}
+
+.content a {
+    background-color: #363830;
+    padding: 16px 42px;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+}
+.content a:hover{background-color: #4c4d48;}
+
+.content {
+    width: 640px;
+    margin: 60px 0 0 346px;
+    z-index: 2;
+    position: relative;
+}
+
+.img {
+    flex: 1 0 auto;
+    max-width: 35%;
+    flex-basis: 35%;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    display: flex;
+    gap: 80px;
+    background: linear-gradient(142deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.18) 100%);
+    margin: 114px 0 0 -114px;
+    width: fit-content;
+    padding: 40px 60px;
+    border-radius: 100px;
+    backdrop-filter: blur(12px);
+}
+
+ul li {
+    max-width: 30%;
+    color: #363830;
+    list-style: none;
+}
+
+ul li span {
+    font-size: 24px;
+    width: 30px;
+    border-bottom: 3px solid #363830;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+@media screen and (max-width:980px) {
+    .flex-container {
+        row-gap: 50px;
+    }
+
+    .content {
+        margin: 60px 0 0 50px
+    }
+
+    ul {
+        gap: 20px;
+        padding: 20px 40px;
+        margin: 0 0 0 -110px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    ul li {
+        max-width: 48%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .box {
+        max-width: 100%;
+    }
+    .content{width: fit-content;}
+
+    .img {
+        max-width: 100%;
+        margin-right: 10px;
+    }
+    .content h1 {
+        font-size: 60px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    ul {
+        margin: 0;
+        border-radius: 40px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    ul li {
+        max-width: 100%;
+    }
+    ul{padding: 15px;}
+}

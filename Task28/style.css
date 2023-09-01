@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 100%;
+    padding: 129px 64px 64px;
+}
+
+.box {
+    display: flex;
+}
+
+.left {
+    flex: 1 0 50%;
+    max-width: 50%;
+}
+
+.right {
+    flex: 1 0 50%;
+    max-width: 50%;
+    display: flex;
+    gap: 40px;
+}
+
+.left h2 {
+    color: #333;
+    font-size: 80px;
+    letter-spacing: 0.8px;
+}
+
+.left p {
+    color: #333;
+    max-width: 495px;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 32px 0;
+}
+
+.left a {
+    font-size: 22px;
+    padding: 24px 56px;
+    background-color: #333;
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 78px;
+}
+
+.right ul li {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.right ul li svg {
+    width: 76px;
+    border-radius: 16px;
+    height: 64px;
+    padding: 22px;
+}
+
+.right ul li:first-child svg {
+    background: #3088FF;
+}
+
+.right ul li:nth-child(2) svg {
+    background: #f2c94c;
+}
+
+.right ul li:nth-child(3) svg {
+    background: #9891e0;
+}
+
+.right ul:nth-child(2) li:nth-child(1) svg {
+    background: #F8B3B8;
+}
+
+.right ul:nth-child(2) li:nth-child(2) svg {
+    background: #6FCF97;
+}
+
+.right ul:nth-child(2) li:nth-child(3) svg {
+    background: #62DBE2;
+}
+
+.right ul li span {
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.right ul li p {
+    color: #333;
+    font-size: 16px;
+}
+
+ul.items {
+    display: flex;
+    margin-top: 118px;
+}
+
+ul.items li {
+    list-style: none;
+}
+
+ul.items li figure {
+    position: relative;
+}
+
+ul.items li figure figcaption {
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 24px 52px;
+}
+
+ul.items li img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul.items li:first-child img {
+    border-radius: 16px 0 0 16px;
+}
+
+ul.items li:last-child img {
+    border-radius: 0 16px 16px 0;
+}

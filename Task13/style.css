@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Times sans-serif;
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .box {
+    display: flex;
+  }
+  .left,.middle,.right{flex: 33%;max-width: 33%;padding: 0 15px;position: relative;}
+  .middle{text-align: center;background: url(images/bg.png) center center/cover no-repeat;}
+  img{max-width: 90%;height: auto;}
+  .left span,.right span{font-size: 24px;color: rgba(37, 37, 37, 0.45);}
+  .left p,.right p{font-size: 24px;color: rgba(37, 37, 37, 0.80);}
+  .left figure{text-align: center;margin-top: 200px;}
+  .right figure{text-align: center;margin-bottom: 200px;}
+  .middle h1{font-size: 112px; color: #252525;text-align: center;margin-top: 73px;
+    line-height: 1.0;}
+  .middle p{font-size: 24px;color: rgba(37, 37, 37, 0.80);margin: 30px 0;max-width: 500px;text-align: center;}
+  .middle a {
+    font-size: 18px;
+    padding: 12px 36px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #252525;
+    color: #fff;
+    border-radius: 36px;
+  }
+  .middle a:hover{background-color: #3f3d3d;}
+  .box .left a:hover{background-color: #3f3d3d;}
+  .explosion{position: absolute; top: 12%;left: 14%;}
+  .star-left{position: absolute; top: 12%;right: -15%;}
+  .star-right{position: absolute; bottom: 15%;left: 0;}
+  .party{position: absolute; bottom: 9%;left: 50%;}

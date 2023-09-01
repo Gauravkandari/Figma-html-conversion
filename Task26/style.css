@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 100%;
+    padding: 100px 100px 64px;
+    background: #080C15;
+    color: #fff;
+}
+
+.box {
+    display: flex;
+}
+
+.left,
+.right {
+    flex: 1 0 50%;
+    max-width: 50%;
+}
+.left{position: relative;z-index: 1;}
+.left h1{font-size: 64px;}
+.left h1 span{color: #cd292a;}
+.left ul.burgers-box{display: flex;margin-top: 40px;}
+.left ul.burgers-box li{list-style: none;margin-left: -32px;}
+.left ul.burgers-box li img{max-width: 100%;height: auto;}
+.left ul.burgers-box li:first-child{margin-left: 0px;}
+.left p{font-size: 24px;margin: 40px 0;
+    line-height: 34px;}
+.left a{font-size: 22px;padding: 24px 40px;background-color:#cd292a;border-radius: 40px;border: none;display: inline-block;text-decoration: none;color: #fff;}
+.right .img img{max-width: 100%;height: auto;transform: scale(1.3);}
+ul.services{display: flex;gap: 16px;margin-top: 60px;}
+ul.services li{background: linear-gradient(94deg, rgba(255, 255, 255, 0.40) 8.76%, rgba(255, 255, 255, 0.00) 100%);padding: 36px 91px 36px 36px;list-style: none;border-radius: 40px 0 0 40px;
+    backdrop-filter: blur(6px);}

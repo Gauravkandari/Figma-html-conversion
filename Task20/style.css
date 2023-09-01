@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.wrap-1 {
+    max-width: 100%;
+    padding: 30px 126px 80px;
+    display: flex;
+    font-family: 'Playfair Display', serif;
+}
+
+.wrap-1 .left {
+    flex: 1 0 40%;
+    max-width: 40%;
+}
+
+.wrap-1 .left h1 {
+    font-size: 64px;
+    color: #363031;
+    line-height: 80px;
+    max-width: 464px;
+    margin-top: 80px;
+}
+
+.wrap-1 .left p {
+    font-size: 24px;
+    color: #363031;
+    margin: 32px 0;
+    max-width: 412px;
+}
+
+.left a {
+    font-size: 20px;
+    padding: 16px 48px;
+    background-color: #A36A4F;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 36px;
+    margin-bottom: 60px;
+}
+
+.left a:hover {
+    background-color: #ce8461f5;
+}
+
+.wrap-1 .right {
+    flex: 1 0 60%;
+    max-width: 60%;
+    position: relative;
+}
+
+.right .coffee {
+    max-width: 400px;
+    position: absolute;
+    left: 20%;
+}
+
+.right .tea {
+    max-width: 300px;
+    position: absolute;
+    top: 41%;
+    left: 57%;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.wrap-2 {
+    background-color: #363032;
+    padding: 138px 63px 48px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul.items {
+    display: flex;
+    padding: 24px 96px;
+    background-color: #ecdac4;
+    gap: 88px;
+    border-radius: 80px;
+    max-width: 890px;
+    margin: -230px auto 0;
+}
+
+ul.items li {
+    list-style: none;
+    text-align: center;
+}
+
+ul.items li span {
+    font-size: 32px;
+    color: #363031;
+    font-weight: 600;
+    display: block;
+}
+
+ul.items li p {
+    font-size: 16px;
+    color: #363031;
+}
+
+ul.coffee-items {
+    display: flex;
+    gap: 90px;
+    margin-top: 80px;
+}
+
+ul.coffee-items li {
+    list-style: none;
+}
+
+ul.coffee-items li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+ul.coffee-items li figcaption {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 5px;
+}

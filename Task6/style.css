@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:wght@200;400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 80px;
+    padding: 50px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.left {
+    max-width: 55%;
+    padding: 0 20px;
+}
+
+.left h1 {
+    font-size: 64px;
+    color: #050505;
+    font-family:'Playfair Display', serif; 
+}
+
+.left>p {
+    font-size: 24px;
+    color: #333;
+    margin: 32px 0;
+}
+
+.logo {
+    width: 101px;
+    height: 101px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-size: 14px;
+    position: absolute;
+    display: inline-block;
+}
+
+.logo svg {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo span:nth-child(1) {
+    transform: rotate(184deg);
+    top: -16%;
+    left: 50%;
+}
+
+.logo span:nth-child(2) {
+    transform: rotate(181deg);
+    top: -15%;
+    left: 44%;
+}
+
+.logo span:nth-child(3) {
+    transform: rotate(158deg);
+    top: -14%;
+    left: 37%;
+}
+
+.logo span:nth-child(4) {
+    transform: rotate(149deg);
+    top: -12%;
+    left: 30%;
+}
+
+.logo span:nth-child(5) {
+    transform: rotate(144deg);
+    top: -6%;
+    left: 18%;
+}
+
+.logo span:nth-child(6) {
+    transform: rotate(117deg);
+    top: 3%;
+    left: 11%;
+}
+
+.logo span:nth-child(7) {
+    transform: rotate(108deg);
+    top: 11%;
+    left: 8%;
+}
+
+.logo span:nth-child(8) {
+    transform: rotate(112deg);
+    top: 19%;
+    left: 4%;
+}
+
+.logo span:nth-child(9) {
+    transform: rotate(101deg);
+    top: 28%;
+    left: 2%;
+}
+
+.logo span:nth-child(10) {
+    transform: rotate(75deg);
+    top: 39%;
+    left: 2%;
+}
+
+.logo span:nth-child(11) {
+    transform: rotate(60deg);
+    top: 53%;
+    left: 10%;
+}
+
+.logo span:nth-child(12) {
+    transform: rotate(68deg);
+    top: 61%;
+    left: 16%;
+}
+
+.logo span:nth-child(13) {
+    transform: rotate(41deg);
+    top: 66%;
+    left: 24%;
+}
+
+.logo span:nth-child(14) {
+    transform: rotate(26deg);
+    top: 70%;
+    left: 30%;
+}
+
+.logo span:nth-child(15) {
+    transform: rotate(21deg);
+    top: 73%;
+    left: 41%;
+}
+
+.logo span:nth-child(16) {
+    transform: rotate(-12deg);
+    top: 72%;
+    left: 54%;
+}
+
+.logo span:nth-child(17) {
+    transform: rotate(-14deg);
+    top: 71%;
+    left: 61%;
+}
+
+.logo span:nth-child(18) {
+    transform: rotate(-20deg);
+    top: 69%;
+    left: 66%;
+}
+
+.logo span:nth-child(19) {
+    transform: rotate(-40deg);
+    top: 61%;
+    left: 76%;
+}
+
+.logo span:nth-child(20) {
+    transform: rotate(-53deg);
+    top: 53%;
+    left: 80%;
+}
+
+.logo span:nth-child(21) {
+    transform: rotate(-59deg);
+    top: 45%;
+    left: 87%;
+}
+
+.logo span:nth-child(22) {
+    transform: rotate(-70deg);
+    top: 38%;
+    left: 92%;
+}
+
+.logo span:nth-child(23) {
+    transform: rotate(-102deg);
+    top: 25%;
+    left: 91%;
+}
+
+.logo span:nth-child(24) {
+    transform: rotate(-100deg);
+    top: 17%;
+    left: 89%;
+}
+
+.logo span:nth-child(25) {
+    transform: rotate(-115deg);
+    top: 8%;
+    left: 85%;
+}
+
+.logo span:nth-child(26) {
+    transform: rotate(-130deg);
+    top: 1%;
+    left: 81%;
+}
+
+.logo span:nth-child(27) {
+    transform: rotate(-136deg);
+    top: -5%;
+    left: 77%;
+}
+
+.logo span:nth-child(28) {
+    transform: rotate(-143deg);
+    top: -11%;
+    left: 69%;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+    border: 1px solid #333;
+    margin-top: 50px;
+    border-radius: 16px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+ul li {list-style: none;
+    width: 20%;
+}
+
+ul li>p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.btn {
+    background-color: #252525;
+    color: #fff;
+    padding: 18px 48px;
+    border-radius: 16px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 32px;
+    transition: 200ms ease-in-out;
+}
+.btn:hover{background-color: #4b4848;}
+
+.bg-white {
+    background-color: #fff;
+    color: #050505;
+    border: 1px solid #333;
+    text-decoration: none;
+}
+.bg-white:hover{color: #fff;}
+
+.right {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 35%;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.right .img::before {
+    content: "";
+    width: 88%;
+    height: 85%;
+    border: 2px solid #111;
+    border-radius: 48px;
+    top: -10%;
+    left: -14%;
+    display: inline-block;
+    position: absolute;
+    z-index: -2;
+}
+
+.right .img::after {
+    content: "";
+    width: 60%;
+    height: 77%;
+    border: 2px solid #111;
+    border-radius: 48px;
+    top: 29%;
+    left: 41%;
+    display: inline-block;
+    position: absolute;
+    z-index: -2;
+}
+
+.img .star {
+    position: absolute;
+    top: -18%;
+    left: -31%;
+}
+
+.img .star-2 {
+    position: absolute;
+    top: 12%;
+    left: 13%;
+}
+
+.img .star-3 {
+    position: absolute;
+    bottom: 7%;
+    right: 12%;
+}
+.btn-right{
+        background-color: #685FD4;;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 16px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        position: absolute;     
+}
+.top{top: 10%;right: 0%;}
+.bottom{bottom: 10%;left: -5%;}
+@media screen and (max-width:980px) {
+    .left{max-width: 100%;}
+    .right{max-width: 100%;}
+    .container{padding: 20px;}
+}
+@media screen and (max-width:768px) {
+    .left h1{font-size: 45px;}
+    .left p{margin: 20px 0;}
+    .item p{margin: 0;}
+}
+@media screen and (max-width:460px) {
+    .left h1{font-size: 25px;}
+    .left {padding:0;}
+    .left p {
+        margin: 10px 0;
+        font-size: 18px;}
+        .left a{display: block;margin-top: 10px;width: fit-content;}
+        ul li {
+            width: 40%;
+        }
+        .right .img::before {
+            width: 75%;
+            height: 80%;
+            top: -10%;
+            left: 0%;}
+            .img .star {
+                top: -20%;
+                left: -19%;
+            }
+}
