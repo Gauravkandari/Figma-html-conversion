@@ -308,3 +308,108 @@ ul li:last-child p {
     top: -11%;
     left: 69%;
 }
+
+@media screen and (max-width:1024px) {
+    .wave-1,
+    .wave-2,
+    .wave-3,
+    .wave-4 {
+        width: 150px;
+    }
+
+    .absolute {
+        left: 0%;
+    }
+
+    .absolute-2 {
+        right: 8%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 2rem;
+    }
+
+    ul {
+        flex-flow: row wrap;
+        gap: 0px;
+    }
+
+    ul li {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .wave-1,
+    .wave-2,
+    .wave-3,
+    .wave-4 {
+        display: none;
+    }
+
+    .round {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        border-radius: 50%;
+        top: 40%;
+        left: 20%;
+    }
+
+    .absolute {
+        top: 2%;
+    }
+
+    ul li:last-child {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        padding: 1rem;
+    }
+
+    ul {
+        gap: 20px;
+    }
+
+    ul li {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    ul li:first-child {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul li:nth-child(2),
+    ul li:nth-child(4) {
+        flex-direction: row;
+    }
+
+    .container h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .container>p {
+        font-size: 18px;
+        margin: 15px auto;
+    }
+
+    .absolute,
+    .absolute-2 {
+        display: none;
+    }
+}
+
+.container a {
+    font-size: 18px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+
+
+}

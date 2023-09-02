@@ -58,3 +58,31 @@ body {
 .wrap-2 ul li img {
     max-width: 100%;
 }
+
+@media screen and (max-width:768px) {
+    .wrap-1 h1 {
+        font-size: 75px;
+        line-height: 80px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .wrap-1 {
+        padding: 100px 15px;
+    }
+
+    .wrap-1 h1 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .wrap-1 p {
+        font-size: 18px;
+        margin: 20px auto;
+    }
+
+    .wrap-1 a {
+        font-size: 18px;
+        padding: 12px 36px;
+    }
+}

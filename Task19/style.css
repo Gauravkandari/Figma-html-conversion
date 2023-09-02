@@ -133,3 +133,73 @@ body {
     font-size: 22px;
     margin-top: 5px;
 }
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .img-box ul {
+        margin-top: 0px;
+    }
+
+    .box {
+        padding-bottom: 0;
+    }
+
+    .box-bottom {
+        padding: 30px;
+    }
+
+    .left h1 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .left,
+    .right,
+    .content,
+    .img-box {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .box,
+    .box-bottom {
+        flex-flow: row wrap;
+    }
+
+    .box-bottom {
+        gap: 40px;
+    }
+
+    .left h1 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+
+    .left>p {
+        font-size: 17px;
+        margin: 10px 0 20px;
+    }
+
+    .left a {
+        font-size: 17px;
+        padding: 10px 30px;
+        margin-bottom: 30px;
+    }
+
+    .content p {
+        font-size: 17px;
+    }
+}

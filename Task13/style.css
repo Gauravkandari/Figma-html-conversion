@@ -44,3 +44,42 @@
   .star-left{position: absolute; top: 12%;right: -15%;}
   .star-right{position: absolute; bottom: 15%;left: 0;}
   .party{position: absolute; bottom: 9%;left: 50%;}
+
+  /* @media screen and (max-width:1024px) {
+    .explosion {
+      top: 20%;
+      left: -6%;
+  }
+  .party {
+    bottom: 22%;
+    left: 55%;
+}
+  } */
+
+  @media screen and (max-width:980px) {
+    .left,.middle,.right{flex: 50%;max-width: 50%;}
+    .box{flex-flow: row wrap;justify-content: center;}
+  }
+  @media screen and (max-width:768px) {
+    .explosion,.star-left,.star-right,.party{display: none;}
+    .left figure {
+      margin-top: 20px;
+  }
+  .right figure {
+    margin-bottom: 20px;
+}
+.middle h1 {
+  font-size: 75px;}
+  }
+
+  @media  screen and (max-width:530px) {
+    .left,.middle,.right{flex: 100%;max-width: 100%;}
+    .box{gap: 20px;}
+    .container{padding: 1rem;}
+    .middle h1 {
+      font-size: 50px;margin-top: 15px;
+  }
+  .middle p {
+    font-size: 18px;
+    margin: 20px 0;}
+  }

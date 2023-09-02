@@ -145,3 +145,108 @@ ul.items li:first-child img {
 ul.items li:last-child img {
     border-radius: 0 16px 16px 0;
 }
+
+@media screen and (max-width:1024px) {
+    .container {
+        padding: 64px 30px 30px;
+    }
+
+    .left h2 {
+        font-size: 60px;
+    }
+
+    .right {
+        gap: 20px;
+    }
+
+    .right ul li {
+        gap: 16px;
+    }
+
+    .right ul {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 16px;
+    }
+
+    .box {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .left,
+    .right {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+
+    ul.items {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    ul.items li {
+        flex: 1 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .right {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .right ul {
+        gap: 20px;
+    }
+
+    .right ul li span {
+        font-size: 25px;
+    }
+
+    .left h2 {
+        font-size: 50px;
+    }
+
+    .left p {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 15px 0 20px;
+    }
+
+    .left a {
+        font-size: 20px;
+        padding: 14px 36px;
+    }
+
+    ul.items li {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+
+    ul.items li {
+        text-align: center;
+    }
+
+    ul.items {
+        margin-top: 50px;
+    }
+
+    ul.items li figure figcaption {
+        max-width: 328px;
+        left: 14%;
+        padding: 20px;
+    }
+
+    ul.items li img,
+    ul.items li:first-child img,
+    ul.items li:last-child img {
+        border-radius: 16px;
+    }
+
+}

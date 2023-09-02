@@ -1,55 +1,234 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 100%;
+  padding: 4rem;
+  position: relative;
+}
+
+.box {
+  display: flex;
+}
+
+.left {
+  flex: 50%;
+  max-width: 50%;
+  position: relative;
+}
+
+.right {
+  flex: 50%;
+  max-width: 50%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  position: relative;
+}
+
+.img-container {
+  display: flex;
+  gap: 20px;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
+}
+
+.box .left h1 {
+  font-size: 72px;
+  color: #252525;
+}
+
+.box .left p {
+  color: #252525cc;
+  font-size: 24px;
+  margin: 20px 0;
+  max-width: 500px;
+}
+
+.box .left a {
+  font-size: 18px;
+  padding: 12px 36px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #252525;
+  color: #fff;
+  border-radius: 36px;
+}
+
+.box .left a:hover {
+  background-color: #3f3d3d;
+}
+
+.box .left figure {
+  margin-left: 270px;
+}
+
+.box .left figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right figure:first-child {
+  margin-top: 200px;
+}
+
+.spiral {
+  position: absolute;
+  bottom: 15px;
+  left: 40px;
+}
+
+.wave-1 {
+  position: absolute;
+  top: 8%;
+  left: 40%;
+}
+
+.wave-2 {
+  position: absolute;
+  top: 12%;
+  left: 40%;
+}
+
+.wave-3 {
+  position: absolute;
+  top: 16%;
+  left: 40%;
+}
+
+.dawn {
+  position: absolute;
+  top: 36%;
+  left: 41%;
+  z-index: 2;
+}
+
+.dawn-right {
+  position: absolute;
+  top: 54%;
+  left: 56%;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.card .text p {
+  font-size: 22px;
+  color: #252525cc;
+}
+
+/* .card .text{max-width: 500px;} */
+
+@media screen and (max-width:1300px) {
+  .box .left figure {
+    margin-left: 70px;
+    margin-top: 50px;
   }
-  
-  body {
-    font-family: sans-serif;
+
+  .spiral {
+    left: -60px;
+  }
+}
+
+@media screen and (max-width:980px) {
+  .box .left figure {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
+  .spiral {
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .left {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .right {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .box {
+    flex-flow: row wrap;
+    gap: 30px;
+  }
+
+  .right figure:first-child {
+    margin-top: 0px;
+  }
+
+  .card {
+    margin-top: 0;
+  }
+
+  .dawn {
+    top: 40%;
+    left: 64%;
+  }
+
+  .dawn-right {
+    display: none;
+  }
+
+  .wave-1 {
+    top: 10%;
+    left: 48%;
+  }
+
+  .wave-2 {
+    top: 14%;
+    left: 48%;
+  }
+
+  .wave-3 {
+    top: 18%;
+    left: 48%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .wave-1,
+  .wave-2,
+  .wave-3,
+  .dawn {
+    display: none;
+  }
+
+  .box .left figure {
+    margin: 30px auto 0;
+  }
+
+  .right,
+  .left {
+    justify-content: center;
+  }
+
+  .card .text p {
     font-size: 16px;
   }
-  
-  .container {
-    max-width: 100%;
-    padding: 4rem;
-    position: relative;
-  }
-  
-  .box {
-    display: flex;
-  }
-  .left{flex: 50%;max-width: 50%;position: relative;}
-  .right{flex: 50%;max-width: 50%;display: flex;gap: 20px;flex-direction: column;position: relative;}
-  .img-container{display: flex;gap: 20px;}
-  .right img{max-width: 100%; height: auto;}
-  .box .left h1{font-size: 72px;color: #252525;}
-  .box .left p {
-    color: #252525cc;
-     font-size: 24px;
-   margin: 20px 0;
-   max-width: 500px;
-  }
-  .box .left a {
-    font-size: 18px;
-    padding: 12px 36px;
-    border: none;
-    text-decoration: none;
-    display: inline-block;
-    background-color: #252525;
-    color: #fff;
-    border-radius: 36px;
-  }
-  .box .left a:hover{background-color: #3f3d3d;}
-  .box .left figure{margin-left: 270px;}
-  .right figure:first-child{margin-top: 200px;}
-  .spiral{position: absolute;bottom: 15px; left: 40px;}
-  .wave-1{position: absolute; top: 8%;left:40% ;}
-  .wave-2{position: absolute;top: 12%;left:40% ;}
-  .wave-3{position: absolute;top: 16%;left:40% ;}
-  .dawn{position: absolute;top: 36%;left:41%;z-index: 2;}
-  .dawn-right{position: absolute;top: 54%;left:56%;}
-  .card {display: flex;gap: 20px; align-items: center;justify-content: center;margin-top: 150px;}
-  .card .text p{font-size: 22px;color: #252525cc;}
-  /* .card .text{max-width: 500px;} */
-
- 
+}

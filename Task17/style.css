@@ -99,3 +99,53 @@ ul.img-box li img {
     height: auto;
     border-radius: 30px;
 }
+
+@media screen and (max-width:980px) {
+    ul.items {
+        display: flex;
+        padding: 40px;
+        gap: 42px;}
+}
+@media screen and (max-width:768px) {
+    .container{padding: 2rem;}
+    ul.items{flex-flow: row wrap;}
+    ul.items li{flex: 45%;max-width: 45%;}
+    .container>figure img {
+        margin-top: 30px;
+    }
+    .container h1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    ul.img-box {
+        gap: 20px;
+    }
+}
+@media screen and (max-width:500px) {
+    .container{padding: 1rem;}
+    ul.items li{flex: 100%;max-width: 100%;}
+    ul.items{gap: 20px;padding: 20px;}
+    .container h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .container>p {
+        font-size: 16px;
+        margin: 15px auto;
+    }
+    ul.items li p {
+        font-size: 16px;
+    }
+    ul.items li span {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    ul.img-box {
+        gap: 10px;
+    }
+    .container a {
+        font-size: 16px;
+        padding: 10px 40px;
+        margin-bottom: 30px;
+}
+}

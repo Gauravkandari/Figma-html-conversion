@@ -75,3 +75,58 @@ ul li:first-child img {
 ul li:last-child img {
     border-radius: 0 16px 16px 0;
 }
+
+@media screen and (max-width:1024px) {
+    ul {
+        margin-top: 30px;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .box {
+        padding: 100px 40px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    ul li {
+        flex: 1 0 33%;
+        max-width: 33%;
+    }
+
+    ul li:nth-child(3) img {
+        border-radius: 0 16px 16px 0;
+    }
+
+    ul li:nth-child(4) img {
+        border-radius: 16px 0 0 16px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .box {
+        padding: 64px 16px;
+    }
+
+    .text-content h1 {
+        font-size: 45px;
+    }
+
+    .text-content p {
+        margin: 20px 0;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .text-content a {
+        font-size: 20px;
+        padding: 14px 36px;
+    }
+
+    ul {
+        padding: 0 10px;
+    }
+}
